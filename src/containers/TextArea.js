@@ -9,6 +9,7 @@ import TextArea from '../components/TextArea/TextArea';
 const mapStateToProps = (state) => ({
     //Variable name.reducerName.initialStateKey
     task: state.App.taskList,
+
     completed: state.CompletedList.completedList,
     edit:state.TextArea.disableEdit
 });
