@@ -1,0 +1,9 @@
+export const ADD_TODO = 'ADD_TODO';
+export const INPUT_VALUE = 'INPUT_VALUE';
+export const COMPLETE_TASK = 'COMPLETE_TASK';
+export const DELETE_TASK = 'DELETE_TASK';
+export const DELETE_COMPLETEDTASK = 'DELETE_COMPLETEDTASK';
+export const UNCOMPLET_LIST = 'UNCOMPLET_LIST';
+export const EDIT_TASK = 'EDIT_TASK';
+export const VISIBILITY = 'VISIBILITY';
+export const EDIT_TOGGLE = 'EDIT_TOGGLE';

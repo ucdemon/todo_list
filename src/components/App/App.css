@@ -1,0 +1,259 @@
+body {
+  background-size: cover;
+  font-family: Google Sans,Roboto,RobotoDraft,Helvetica,Arial,sans-serif !important;
+  font-size: 14px !important;
+  font-weight: 500 !important; }
+
+#root .test {
+  display: inline-block;
+  position: relative;
+  border: none;
+  margin: 0 0 0 62px; }
+
+#root .test:focus {
+  outline: none; }
+
+#root .svg-inline--fa {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  font-size: 18px; }
+
+#root .todolist {
+  /*hoshi*/ }
+  #root .todolist .input {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    max-width: 80%;
+    width: calc(100% - 2em);
+    vertical-align: top; }
+  #root .todolist .input__field {
+    position: relative;
+    display: block;
+    float: right;
+    padding: 0.8em;
+    border: none;
+    border-radius: 0;
+    background: #f0f0f0;
+    color: #e0e0e0;
+    -webkit-appearance: none;
+    /* for box shadows to show on iOS */ }
+  #root .todolist .input__field:focus {
+    outline: none; }
+  #root .todolist .input__label {
+    display: inline-block;
+    float: right;
+    padding: 0 1em;
+    width: 40%;
+    /*color: red;*/
+    font-weight: bold;
+    font-size: 70.25%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; }
+  #root .todolist .input__label-content {
+    position: relative;
+    display: block;
+    padding: 1.6em 0;
+    width: 100%; }
+  #root .todolist .graphic {
+    position: absolute;
+    top: 0;
+    left: 0;
+    fill: none; }
+  #root .todolist .icon {
+    color: #ddd;
+    font-size: 150%; }
+  #root .todolist .input--hoshi {
+    overflow: hidden; }
+  #root .todolist .input__field--hoshi {
+    padding: 1.2em 0.18em;
+    width: 100%;
+    background: transparent;
+    color: #595F6E; }
+  #root .todolist .input__label--hoshi {
+    position: absolute;
+    bottom: 1px;
+    left: 0;
+    padding: 0 0.25em;
+    width: 100%;
+    height: calc(100% - 1em);
+    text-align: left;
+    pointer-events: none; }
+  #root .todolist .input__label-content--hoshi {
+    position: absolute; }
+  #root .todolist .input__label--hoshi::before,
+  #root .todolist .input__label--hoshi::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: calc(100% - 10px);
+    border-bottom: 2px solid #B9C1CA; }
+  #root .todolist .input__label--hoshi::after {
+    margin-bottom: 3px;
+    border-bottom: 2px solid;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+    -webkit-transition: -webkit-transform 0.3s;
+    transition: transform 0.3s; }
+  #root .todolist .input__label--hoshi-color::after {
+    border-color: #4285f4; }
+  #root .todolist .input__field--hoshi:focus + .input__label--hoshi::after,
+  #root .todolist .input--filled .input__label--hoshi::after {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0); }
+  #root .todolist .input__field--hoshi:focus + .input__label--hoshi .input__label-content--hoshi,
+  #root .todolist .input--filled .input__label-content--hoshi {
+    -webkit-animation: anim-1 0.3s forwards;
+    animation: anim-1 0.3s forwards; }
+
+@-webkit-keyframes anim-1 {
+  50% {
+    opacity: 0;
+    -webkit-transform: translate3d(1em, 0, 0);
+    transform: translate3d(1em, 0, 0); }
+  51% {
+    opacity: 0;
+    -webkit-transform: translate3d(-1em, -40%, 0);
+    transform: translate3d(-1em, -40%, 0); }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, -40%, 0);
+    transform: translate3d(0, -40%, 0); } }
+
+@keyframes anim-1 {
+  50% {
+    opacity: 0;
+    -webkit-transform: translate3d(1em, 0, 0);
+    transform: translate3d(1em, 0, 0); }
+  51% {
+    opacity: 0;
+    -webkit-transform: translate3d(-1em, -40%, 0);
+    transform: translate3d(-1em, -40%, 0); }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, -40%, 0);
+    transform: translate3d(0, -40%, 0); } }
+  #root .todolist .row_none {
+    display: none; }
+  #root .todolist_completedpicture {
+    height: 400px;
+    width: 270px; }
+  #root .todolist_input {
+    padding: 20px 0 0 0; }
+    #root .todolist_input_add:focus {
+      outline: none; }
+    #root .todolist_input_add {
+      padding: 15px;
+      cursor: pointer;
+      text-decoration: none;
+      position: relative;
+      margin: 6px 0;
+      display: inline-block;
+      background-color: #4285f4;
+      border: none; }
+  #root .todolist_tasklist {
+    background-color: #fff;
+    cursor: pointer; }
+    #root .todolist_tasklist:first-child {
+      padding: 20px 0 0 0; }
+    #root .todolist_tasklist_task {
+      border-bottom: 1px solid #e0e0e0;
+      list-style: none;
+      padding: 12px 0;
+      position: relative;
+      display: flex;
+      justify-content: space-between; }
+      #root .todolist_tasklist_task textarea:disabled {
+        background-color: #eaf1fe !important; }
+      #root .todolist_tasklist_task textarea {
+        display: inline-block;
+        position: relative;
+        min-width: 70%;
+        max-width: 70%;
+        z-index: 0;
+        resize: none;
+        border: none; }
+      #root .todolist_tasklist_task_check:hover .todolist_tasklist_task_check-circle {
+        display: none; }
+      #root .todolist_tasklist_task_check:hover .todolist_tasklist_task_check-checkmark {
+        display: inline-block; }
+      #root .todolist_tasklist_task_check:focus, #root .todolist_tasklist_task_edit:focus, #root .todolist_tasklist_task_delete:focus, #root .todolist_tasklist_task textarea:before,
+      #root .todolist_tasklist_task textarea:after, #root .todolist_tasklist_task textarea:focus {
+        outline: none; }
+      #root .todolist_tasklist_task_delete:hover {
+        background-color: #e0e0e0; }
+      #root .todolist_tasklist_task_edit, #root .todolist_tasklist_task_delete, #root .todolist_tasklist_task_check {
+        display: inline-block;
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        position: relative;
+        border: none;
+        background: none; }
+        #root .todolist_tasklist_task_edit-save, #root .todolist_tasklist_task_edit-checkmark, #root .todolist_tasklist_task_delete-save, #root .todolist_tasklist_task_delete-checkmark, #root .todolist_tasklist_task_check-save, #root .todolist_tasklist_task_check-checkmark {
+          display: none; }
+      #root .todolist_tasklist_task_check {
+        margin: 0 0 0 10px; }
+  #root .todolist_completed {
+    border-top: 1px solid #e0e0e0;
+    border-bottom: 1px solid #e0e0e0;
+    display: flex;
+    cursor: pointer; }
+    #root .todolist_completed p {
+      margin: 0;
+      padding: 14px 20px;
+      position: relative; }
+    #root .todolist_completed_slide:hover {
+      background-color: #e0e0e0; }
+    #root .todolist_completed_slide {
+      display: inline-block;
+      border-radius: 50%;
+      width: 30px;
+      height: 30px;
+      position: relative;
+      margin: 9px 0; }
+      #root .todolist_completed_slide_up, #root .todolist_completed_slide_down {
+        position: absolute;
+        top: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        left: 50%;
+        font-size: 18px; }
+    #root .todolist_completed_list_task {
+      border-bottom: 1px solid #e0e0e0;
+      list-style: none;
+      padding: 12px 0;
+      position: relative;
+      display: flex;
+      justify-content: space-between; }
+      #root .todolist_completed_list_task_check:hover, #root .todolist_completed_list_task_delete:hover {
+        background-color: #e0e0e0; }
+      #root .todolist_completed_list_task_check:focus, #root .todolist_completed_list_task_delete:focus {
+        outline: none; }
+      #root .todolist_completed_list_task_check, #root .todolist_completed_list_task_delete {
+        display: inline-block;
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        position: relative;
+        margin: 0 0 0 10px;
+        border: none;
+        background: none; }
+      #root .todolist_completed_list_task li {
+        display: inline-block;
+        position: relative;
+        width: 80%;
+        text-decoration-line: line-through; }
+    #root .todolist_completed_list_none {
+      display: none; }
