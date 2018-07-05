@@ -21,13 +21,4 @@ const mapDispatchToProps = (dispatch) => {
 };
 
 
-// const mapDispatchToProps = (dispatch) => {
-//     return {
-//         completeTask: () => (dispatch(completeTask))
-//         deleteTask: () => (dispatch(deleteTask)),
-//         editList: () => (dispatch(editList)),
-//         toggleEditField: () => (dispatch(toggleEditField)),
-//     };
-// };
-
 export default connect(mapStateToProps, mapDispatchToProps)(TextArea); /*connect store to certain component*/

@@ -5,8 +5,6 @@ const initialState = {
     disableEdit:true,
     taskList: []
 };
-
-
 export default function toggleEditField (state = initialState, action){
     const { payload } = action; /*import payload obj. from action*/
     switch (action.type) { /*switch between different action types*/
