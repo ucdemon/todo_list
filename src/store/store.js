@@ -1,4 +1,4 @@
-import { createStore } from 'redux'
-import todoApp from '../reducers/index'
+import { createStore } from 'redux' /*create store*/
+import todoApp from '../reducers/index' /*import combine reducer to store*/
 
-let store = createStore(todoApp)
+let store = createStore(todoApp);

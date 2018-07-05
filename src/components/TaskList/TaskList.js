@@ -7,10 +7,9 @@ import TextArea from "../../containers/TextArea";
 
 class TaskList extends Component {
 
-
     renderTaskList(list){
         list = this.props.task;
-        return list.map((item, index) => {
+        return list.map((item, index) => { /*map each item in different component to split react logic*/
             return (
                 <div key={index} className='todolist_tasklist'>
                     <TextArea item={item}/>

@@ -1,15 +1,15 @@
-import * as constants from '../constants/constants'
+import * as constants from '../constants/constants'/*import all constants*/
 
 
-
+/*set initialState*/
 const initialState = {
     completedList: [],
     visible: false
 };
 
 export default (state = initialState, action) =>{
-    const { payload } = action;
-    switch (action.type) {
+    const { payload } = action; /*import payload obj. from action*/
+    switch (action.type) { /*switch between different action types*/
         case constants.COMPLETE_TASK:
             return Object.assign({}, state, {
                 ...state,
