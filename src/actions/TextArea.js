@@ -1,11 +1,9 @@
 import * as constants from '../constants/constants';
 
-
-
-export function completeTask(complete_task) {
+export function completeTask(complete_task) {/*action creator*/
     return {
-        type: constants.COMPLETE_TASK,
-        payload: {
+        type: constants.COMPLETE_TASK,      /*type of action being performed*/
+        payload: {                          /*payload of data sent from application to store*/
             complete_task
         }
     };

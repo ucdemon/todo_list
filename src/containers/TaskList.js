@@ -1,13 +1,9 @@
-//conect to store
-import { connect } from 'react-redux'
-
-
-// import { bindActionCreators }  from 'redux';
-import TaskList from '../components/TaskList/TaskList';
+import { connect } from 'react-redux' /*connect to store*/
+import TaskList from '../components/TaskList/TaskList'; /*import component in which we want to path state and action*/
 
 const mapStateToProps = (state) => ({
-    //Variable name.reducerName.initialStateKey
+    /*variableName.reducerName.initialStateKey*/
     task: state.App.taskList,
 });
 
-export default connect(mapStateToProps)(TaskList);
+export default connect(mapStateToProps)(TaskList); /*connect store to certain component*/
