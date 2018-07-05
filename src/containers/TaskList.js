@@ -3,7 +3,7 @@ import TaskList from '../components/TaskList/TaskList'; /*import component in wh
 
 const mapStateToProps = (state) => ({
     /*variableName.reducerName.initialStateKey*/
-    task: state.App.taskList,
+    task: state.TextArea.taskList,
 });
 
 export default connect(mapStateToProps)(TaskList); /*connect store to certain component*/

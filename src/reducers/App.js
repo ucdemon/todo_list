@@ -2,8 +2,7 @@ import * as constants from '../constants/constants' /*import all constants*/
 
 /*set initialState*/
 const initialState = {
-    targetValue: '',
-    taskList: []
+    targetValue: ''
 };
 {/*reducer is a pure function that takes
    the previous state and an action, and
@@ -17,26 +16,6 @@ export default (state = initialState, action) => {
             return Object.assign({}, state, {
                 ...state,
                 targetValue: payload.input
-            });
-        case constants.ADD_TODO:
-            return Object.assign({}, state, {
-                ...state,
-                taskList: [...state.taskList, payload.task]
-            });
-        case constants.DELETE_TASK:
-            return Object.assign({}, state, {
-                ...state,
-                taskList: payload.task
-            });
-        case constants.UNCOMPLET_LIST:
-            return Object.assign({}, state, {
-                ...state,
-                taskList: [...state.taskList, payload.task]
-            });
-        case constants.EDIT_TASK:
-            return Object.assign({}, state, {
-                ...state,
-                taskList: payload.list
             });
         default:
             return state
