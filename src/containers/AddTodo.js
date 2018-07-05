@@ -1,11 +1,11 @@
 import { connect } from 'react-redux' /*connect to store*/
 import { bindActionCreators }  from 'redux';/*pre-binding the action creators so in component we can call action by callback*/
-import { addTask,inputValue } from '../actions/App' /*connect functions from actions*/
+import { addTask, inputValue } from '../actions/App' /*connect functions from actions*/
 import App from '../components/App/App'; /*import component in which we want to path state and action*/
 
 const mapStateToProps = (state) => ({   /*dispose state to props*/
     /*variableName.reducerName.initialStateKey*/
-    task: state.App.taskList,
+    task: state.TextArea.taskList,
     targetValue: state.App.targetValue,
     completedList: state.CompletedList.completedList
 });

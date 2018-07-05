@@ -27,7 +27,7 @@ class CompletedList extends Component {
             );
         });
         this.props.deleteCompletedTask(deleted);
-        this.props.uncompletTask(item); /*additionally transfer clicked item to task list*/
+        this.props.uncompleteTask(item); /*additionally transfer clicked item to task list*/
     };
 
     rendercompletedTasks = (completedtasks) => {
@@ -62,7 +62,7 @@ class CompletedList extends Component {
                 <div className='col-md-6'>
                     <div className='todolist_completed'>
                         <p> Completed ({this.props.completed.length})</p>
-                        <div onClick={this.props.togleList} className='todolist_completed_slide'> {/*toggle completed list*/}
+                        <div onClick={this.props.toggleList} className='todolist_completed_slide'> {/*toggle completed list*/}
                             {this.props.visible ? <div className='todolist_completed_slide_down'> {/*changing icons for open/closed list state*/}
                                 <FontAwesomeIcon icon={faAngleUp} color='#4285f4' />
                             </div> : <div className='todolist_completed_slide_up'>

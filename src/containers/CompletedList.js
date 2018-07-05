@@ -1,6 +1,6 @@
 import { connect } from 'react-redux' /*connect to store*/
 import { bindActionCreators }  from 'redux'; /*pre-binding the action creators so in component we can call action by callback*/
-import {deleteCompletedTask, uncompletTask, togleList} from '../actions/CompletedList' /*connect functions from actions*/
+import {deleteCompletedTask, uncompleteTask, toggleList} from '../actions/CompletedList' /*connect functions from actions*/
 import CompletedList from "../components/CompletedList/CompletedList"; /*import component in which we want to path state and action*/
 
 const mapStateToProps = (state) => ({ /*dispose state to props*/
@@ -14,8 +14,8 @@ const mapStateToProps = (state) => ({ /*dispose state to props*/
 const mapDispatchToProps = (dispatch) => {  /*dispose action to props*/
     return {
         deleteCompletedTask: bindActionCreators(deleteCompletedTask, dispatch), /*can call this action in component by this.props.someCallback() and not this.props.dispatch(someActionCreator())*/
-        uncompletTask: bindActionCreators(uncompletTask, dispatch),
-        togleList: bindActionCreators(togleList, dispatch)
+        uncompleteTask: bindActionCreators(uncompleteTask, dispatch),
+        toggleList: bindActionCreators(toggleList, dispatch)
     };
 };
 

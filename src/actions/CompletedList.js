@@ -9,7 +9,7 @@ export function deleteCompletedTask(task) {  /*action creator*/
     };
 }
 
-export function uncompletTask(task) {
+export function uncompleteTask(task) {
     return {
         type: constants.UNCOMPLET_LIST,
         payload: {
@@ -18,7 +18,7 @@ export function uncompletTask(task) {
     };
 }
 
-export function togleList() {
+export function toggleList() {
     return {
         type: constants.VISIBILITY
     };
