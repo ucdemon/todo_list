@@ -174,7 +174,7 @@ body {
       display: flex;
       justify-content: space-between; }
       #root .todolist_tasklist_task textarea:disabled {
-        background-color: #eaf1fe !important; }
+        background-color: white; }
       #root .todolist_tasklist_task textarea {
         display: inline-block;
         position: relative;
@@ -182,7 +182,8 @@ body {
         max-width: 70%;
         z-index: 0;
         resize: none;
-        border: none; }
+        border: none;
+        background-color: #eaf1fe; }
       #root .todolist_tasklist_task_check:hover .todolist_tasklist_task_check-circle {
         display: none; }
       #root .todolist_tasklist_task_check:hover .todolist_tasklist_task_check-checkmark {
