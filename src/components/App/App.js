@@ -19,7 +19,8 @@ class App extends Component {
     submitTask = (e) => {       /*form new task array*/
         const task = {
             task:this.props.targetValue,    /*text from input field*/
-            id:Date.now()                   /*forming unique id for each task for for further identification*/
+            id:Date.now(),                   /*forming unique id for each task for for further identification*/
+            toggleEdit: true
         };
         this.props.addTask(task);
         e.preventDefault();       /*revent normal action in our case prevent form from submitting and as a reloading*/

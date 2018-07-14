@@ -2,7 +2,6 @@ import * as constants from '../constants/constants' /*import all constants*/
 
 /*set initialState*/
 const initialState = {
-    disableEdit:true,
     taskList: []
 };
 export default function toggleEditField (state = initialState, action){
@@ -11,7 +10,7 @@ export default function toggleEditField (state = initialState, action){
         case constants.EDIT_TOGGLE:
             return Object.assign({}, state, {
                 ...state,
-                disableEdit: !state.disableEdit
+                taskList: payload.list
             });
         case constants.ADD_TODO:
             return Object.assign({}, state, {
