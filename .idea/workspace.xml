@@ -3,11 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="0ecde63a-051e-4fb8-9a99-7f5120c5f203" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/actions/TextArea.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/TextArea.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/App/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/App/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/TextArea/TextArea.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TextArea/TextArea.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/TextArea.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/TextArea.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reducers/TextArea.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/TextArea.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -349,7 +344,7 @@
       <workItem from="1531161524871" duration="848000" />
       <workItem from="1531240122448" duration="6224000" />
       <workItem from="1531248335412" duration="3311000" />
-      <workItem from="1531562926154" duration="1024000" />
+      <workItem from="1531562926154" duration="1440000" />
     </task>
     <task id="LOCAL-00001" summary="init commit">
       <created>1530557310808</created>
@@ -393,11 +388,18 @@
       <option name="project" value="LOCAL" />
       <updated>1530819054869</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Get rid of react state giving its functionality to a variable in object">
+      <created>1531564313331</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1531564313331</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="238422000" />
+    <option name="totallyTimeSpent" value="238838000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -486,17 +488,18 @@
     <MESSAGE value="Add comments to components, action, reducers, store and containers" />
     <MESSAGE value="Fix reducer logic" />
     <MESSAGE value="Fix App and TextArea reducer logic and some gramatical errors." />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix App and TextArea reducer logic and some gramatical errors." />
+    <MESSAGE value="Get rid of react state giving its functionality to a variable in object" />
+    <option name="LAST_COMMIT_MESSAGE" value="Get rid of react state giving its functionality to a variable in object" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
-          <url />
+          <url>file://$PROJECT_DIR$/src/components/TextArea/TextArea.js</url>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url />
+          <url>file://$PROJECT_DIR$/src/components/Test/Test.js</url>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
