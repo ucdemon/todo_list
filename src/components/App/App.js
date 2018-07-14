@@ -55,7 +55,6 @@ class App extends Component {
                         <TaskList/>
                     </div>
                     {this.props.completedList.length !== 0 ? <CompletedList/> : null}
-                    {/*<Test/>*/}
                 </div>
             </div>
         );

@@ -11,7 +11,6 @@ body {
     position: relative;
     border: none;
     margin: 0 0 0 62px;
-
   }
   .test:focus{
     outline: none;
@@ -220,8 +219,7 @@ body {
         display: flex;
         justify-content: space-between;
         textarea:disabled  {
-          background-color: #eaf1fe!important;
-          //opacity: 0.5;
+          background-color: white;
         }
         textarea{
           display: inline-block;
@@ -231,6 +229,7 @@ body {
           z-index: 0;
           resize: none;
           border: none;
+          background-color: #eaf1fe
         }
         &_check:hover .todolist_tasklist_task_check-circle{
           display: none;
