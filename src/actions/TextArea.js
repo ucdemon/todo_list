@@ -26,8 +26,11 @@ export function editList(list) {
     };
 }
 
-export function toggleEditField() {
+export function toggleEditField(list) {
     return {
-        type: constants.EDIT_TOGGLE
+        type: constants.EDIT_TOGGLE,
+        payload: {
+            list
+        }
     };
 }

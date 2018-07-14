@@ -12,20 +12,15 @@ import faSave from "@fortawesome/fontawesome-free-regular/faSave";
 
 class TextArea extends Component {
 
-    constructor(props) {
-        super(props);
-        this.state= {
-            edit: true,             /*create to change edit state of textarea*/
-            icontoggle: true        /*create to switch between edit & save icons*/
-        };
-    }
-
-    editField = () => {  /*toggle between two states*/
-        this.setState(prevState => ({
-            edit: !prevState.edit,
-            icontoggle: !prevState.icontoggle
-        }));
-        setTimeout(()=>{document.getElementById(this.props.item.id).focus()},0);    /*was a necessary to use timeout, to make focus work*/
+    editField = (id) =>  {  /*toggle between two states*/
+        const list = this.props.task.map((item) =>{
+            if (id !== item.id) return item; /*if id off clicked item don't match with transmitted id return old task*/
+            return (
+                Object.assign(item,item.toggleEdit = !item.toggleEdit) /* if id matches change item to new task with changed text*/
+            );
+        });
+        this.props.toggleEditField(list);
+        setTimeout(()=>{document.getElementById(this.props.item.id).focus()},0);
     };
 
     deleteTask = (id) => {
@@ -75,10 +70,10 @@ class TextArea extends Component {
                                   id={this.props.item.id} /*assign item id as textarea id to capture it by getElement*/
                                   value={this.props.item.task}
                                   onChange={this.editTask(this.props.item.id)} /*transfer element id to editTask method */
-                                  disabled = {this.state.edit}
+                                  disabled = {this.props.item.toggleEdit}
                 />
-                <button onClick={this.editField} className='todolist_tasklist_task_edit' >
-                    {this.state.icontoggle
+                <button onClick={() => this.editField(this.props.item.id)} className='todolist_tasklist_task_edit' >
+                    {this.props.item.toggleEdit
                         ? <FontAwesomeIcon icon={faEdit} className='todolist_tasklist_task_edit-pen'
                                            data-for='todolist_tasklist_task_edit-pen' data-tip='Edit'
                                            data-effect="solid" data-place="bottom"  data-delay-show='800'/>
@@ -89,7 +84,7 @@ class TextArea extends Component {
                     <ReactTooltip id='todolist_tasklist_task_edit-pen'/>
                     <ReactTooltip id='todolist_tasklist_task_edit-save'/>
                 </button>
-                <button onClick={()=>this.deleteTask(this.props.item.id)} data-tip='Delete' data-for='todolist_tasklist_task_delete'
+                <button onClick={() => this.deleteTask(this.props.item.id)} data-tip='Delete' data-for='todolist_tasklist_task_delete'
                         className='todolist_tasklist_task_delete' data-effect="solid" data-place="bottom"  data-delay-show='800'>
                     <FontAwesomeIcon icon={faTrash} />
                     <ReactTooltip id='todolist_tasklist_task_delete'/>
