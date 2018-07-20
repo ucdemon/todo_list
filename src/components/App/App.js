@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './App.css';
+import './App.css'
 import ReactTooltip from 'react-tooltip';
 import FontAwesomeIcon from '@fortawesome/react-fontawesome';
 import faAngleRight from "@fortawesome/fontawesome-free-solid/faAngleRight";
