@@ -5,7 +5,7 @@ $color-gray: #e0e0e0;
 $color-blue: #4285f4;
 $color-blue-hover: #eaf1fe;
 
-@import "input";
+@import 'input';
 
 @mixin button-shared {
    display: inline-block;
@@ -37,7 +37,7 @@ body {
   font-size: 14px !important;
   font-weight: 500 !important;
 }
-#root {
+.root {
   .svg-inline--fa{
     @include position-center;
   }
