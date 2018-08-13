@@ -127,21 +127,21 @@ body {
   font-size: 14px !important;
   font-weight: 500 !important; }
 
-#root .svg-inline--fa {
+.root .svg-inline--fa {
   position: absolute;
   top: 50%;
   transform: translate(-50%, -50%);
   left: 50%;
   font-size: 18px; }
 
-#root .todolist .row_none {
+.root .todolist .row_none {
   display: none; }
 
-#root .todolist_input {
+.root .todolist_input {
   padding: 20px 0 0 0; }
-  #root .todolist_input_add:focus {
+  .root .todolist_input_add:focus {
     outline: none; }
-  #root .todolist_input_add {
+  .root .todolist_input_add {
     display: inline-block;
     position: relative;
     border: none;
@@ -153,19 +153,19 @@ body {
     margin: 6px 0;
     background-color: #4285f4; }
 
-#root .todolist_tasklist:first-child {
+.root .todolist_tasklist:first-child {
   padding: 20px 0 0 0; }
 
-#root .todolist_tasklist_task {
+.root .todolist_tasklist_task {
   list-style: none;
   padding: 12px 0;
   position: relative;
   display: flex;
   justify-content: space-between;
   border-bottom: 1px solid #e0e0e0; }
-  #root .todolist_tasklist_task textarea:disabled {
+  .root .todolist_tasklist_task textarea:disabled {
     background-color: #fff; }
-  #root .todolist_tasklist_task textarea {
+  .root .todolist_tasklist_task textarea {
     display: inline-block;
     position: relative;
     min-width: 70%;
@@ -174,16 +174,16 @@ body {
     resize: none;
     border: none;
     background-color: #eaf1fe; }
-  #root .todolist_tasklist_task_check:hover .todolist_tasklist_task_check-circle {
+  .root .todolist_tasklist_task_check:hover .todolist_tasklist_task_check-circle {
     display: none; }
-  #root .todolist_tasklist_task_check:hover .todolist_tasklist_task_check-checkmark {
+  .root .todolist_tasklist_task_check:hover .todolist_tasklist_task_check-checkmark {
     display: inline-block; }
-  #root .todolist_tasklist_task_check:focus, #root .todolist_tasklist_task_edit:focus, #root .todolist_tasklist_task_delete:focus, #root .todolist_tasklist_task textarea:before,
-  #root .todolist_tasklist_task textarea:after, #root .todolist_tasklist_task textarea:focus {
+  .root .todolist_tasklist_task_check:focus, .root .todolist_tasklist_task_edit:focus, .root .todolist_tasklist_task_delete:focus, .root .todolist_tasklist_task textarea:before,
+  .root .todolist_tasklist_task textarea:after, .root .todolist_tasklist_task textarea:focus {
     outline: none; }
-  #root .todolist_tasklist_task_delete:hover {
+  .root .todolist_tasklist_task_delete:hover {
     background-color: #e0e0e0; }
-  #root .todolist_tasklist_task_edit, #root .todolist_tasklist_task_delete, #root .todolist_tasklist_task_check {
+  .root .todolist_tasklist_task_edit, .root .todolist_tasklist_task_delete, .root .todolist_tasklist_task_check {
     display: inline-block;
     position: relative;
     border: none;
@@ -192,22 +192,22 @@ body {
     width: 30px;
     height: 30px;
     border-radius: 50%; }
-    #root .todolist_tasklist_task_edit-save, #root .todolist_tasklist_task_edit-checkmark, #root .todolist_tasklist_task_delete-save, #root .todolist_tasklist_task_delete-checkmark, #root .todolist_tasklist_task_check-save, #root .todolist_tasklist_task_check-checkmark {
+    .root .todolist_tasklist_task_edit-save, .root .todolist_tasklist_task_edit-checkmark, .root .todolist_tasklist_task_delete-save, .root .todolist_tasklist_task_delete-checkmark, .root .todolist_tasklist_task_check-save, .root .todolist_tasklist_task_check-checkmark {
       display: none; }
-  #root .todolist_tasklist_task_check {
+  .root .todolist_tasklist_task_check {
     margin: 0 0 0 10px; }
 
-#root .todolist_completed {
+.root .todolist_completed {
   border-top: 1px solid #e0e0e0;
   border-bottom: 1px solid #e0e0e0;
   display: flex; }
-  #root .todolist_completed p {
+  .root .todolist_completed p {
     margin: 0;
     padding: 14px 20px;
     position: relative; }
-  #root .todolist_completed_slide:hover {
+  .root .todolist_completed_slide:hover {
     background-color: #e0e0e0; }
-  #root .todolist_completed_slide {
+  .root .todolist_completed_slide {
     display: inline-block;
     position: relative;
     border: none;
@@ -217,18 +217,18 @@ body {
     height: 30px;
     border-radius: 50%;
     margin: 9px 0; }
-  #root .todolist_completed_list_task {
+  .root .todolist_completed_list_task {
     list-style: none;
     padding: 12px 0;
     position: relative;
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid #e0e0e0; }
-    #root .todolist_completed_list_task_check:hover, #root .todolist_completed_list_task_delete:hover {
+    .root .todolist_completed_list_task_check:hover, .root .todolist_completed_list_task_delete:hover {
       background-color: #e0e0e0; }
-    #root .todolist_completed_list_task_check:focus, #root .todolist_completed_list_task_delete:focus {
+    .root .todolist_completed_list_task_check:focus, .root .todolist_completed_list_task_delete:focus {
       outline: none; }
-    #root .todolist_completed_list_task_check, #root .todolist_completed_list_task_delete {
+    .root .todolist_completed_list_task_check, .root .todolist_completed_list_task_delete {
       display: inline-block;
       position: relative;
       border: none;
@@ -238,10 +238,10 @@ body {
       height: 30px;
       border-radius: 50%;
       margin: 0 0 0 10px; }
-    #root .todolist_completed_list_task li {
+    .root .todolist_completed_list_task li {
       display: inline-block;
       position: relative;
       width: 80%;
       text-decoration-line: line-through; }
-  #root .todolist_completed_list_none {
+  .root .todolist_completed_list_none {
     display: none; }
